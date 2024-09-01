@@ -1,4 +1,4 @@
-import 'package:ed_tech_aap/splash_Screen.dart';
+import 'package:ed_tech_aap/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

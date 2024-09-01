@@ -458,20 +458,11 @@ class _RegionScreenState extends State<RegionScreen>
                 : AnimatedBuilder(
                     animation: _zoomAnimation,
                     builder: (context, child) {
-                      return GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _showKarachi = false;
-                            _showIslamabad = false;
-                            _showLahore = false;
-                          });
-                        },
-                        child: Flutter3DViewer(
-                          progressBarColor: Colors.blue.shade900,
-                          src:
-                              'assets/Earth_3d_model.glb', // Ensure this is a high-quality model for better experience
-                          controller: _controller,
-                        ),
+                      return Flutter3DViewer(
+                        progressBarColor: Colors.blue.shade900,
+                        src:
+                            'assets/model/Earth_3d_model.glb', // Ensure this is a high-quality model for better experience
+                        controller: _controller,
                       );
                     },
                   ),
