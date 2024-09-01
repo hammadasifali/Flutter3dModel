@@ -1,0 +1,3 @@
+-keep class com.example.ed_tech_aap.** { *; }
+-keepclassmembers class com.example.ed_tech_aap.** { *; }
+-dontwarn com.example.ed_tech_aap.**
